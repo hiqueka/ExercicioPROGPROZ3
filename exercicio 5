@@ -1,0 +1,8 @@
+n1 = int(input("Digite o numero inicial: "))
+n2 = int(input("Digite o numero final: "))
+
+for num in range(n1, n2 +1): #esse +1 faz com que se o final for par ele printa sem o +1 
+        if (num%2==0):       #se colocasse um intervalo de 1 a 10 o 10 não seria printado
+            print(num)
+
+    
