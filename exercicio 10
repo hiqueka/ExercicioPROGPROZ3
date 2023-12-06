@@ -1,0 +1,16 @@
+notas = 0
+cont = 0
+nota = int(input("Digite uma nota (ou um valor negativo para parar): "))
+while nota>=0:
+    notas+=nota
+    cont+=1
+    nota = float(input("Digite um numero: "))
+
+if cont>0:
+    media = notas/cont
+    print(f"A media das notas é {media}")
+    
+else:
+    print("Nenhuma nota válida foi digitada.")
+
+print(f"A soma das notas é {notas}")
