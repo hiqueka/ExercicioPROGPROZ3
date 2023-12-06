@@ -1,0 +1,16 @@
+num = int(input("Digite um numero: "))
+
+if (num<0):
+    print("Nao pode ser 0")
+elif(num == 1):
+    print("Fibonacci de 1 é 0")
+elif(num == 2):
+    print("Fibonacci de 2 é 1")
+else:
+    f1, f2 = 1,1
+
+    for i in range(2,num):
+        fibo = f1 +f2
+        f1 = f2
+        f2 = fibo
+        print(f"Fibonacci de {num} é {fibo}")
